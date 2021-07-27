@@ -1,0 +1,9 @@
+<%- include('header') %>
+<% if(error) { %>
+    <span><%= error %></span>
+<% }else{ %>
+<span>Você digitu o valor: <%= quantidade %></span>
+<span>A cotacao: <%= cotacao %> </span>
+<span>O valor convertido é:  <span class="value"><%= conversao %> R$</span></span>
+<% } %>
+<%- include('footer') %>
